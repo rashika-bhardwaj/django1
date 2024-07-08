@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning App</title>
+    <link rel="stylesheet" href="{%static 'testapp/css/bootstrap.css'%}">
+    <script src="{%static 'testapp/js/bootstrap.js'%}"></script>
+    <script src="{%static 'testapp/js/jquery.js'%}"></script>
+    <script src="{%static 'testapp/js/popper.js'%}"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center alert alert-danger">CRUD Operation by RB</h2>
+        {% block content %} {% endblock content %}
+    </div>
+</body>
+</html>
